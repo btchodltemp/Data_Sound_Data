@@ -8,3 +8,47 @@ bytes_encode = codecs.encode (file_to_bytes, "hex_codec")
 encode_hex = int(binascii.hexlify(bytes_encode))
 binary_code = bin(encode_hex).replace('b','')
 binary_code
+
+--Вывод сигнала на звуковой разъем компьютера
+import winsound
+import pyaudio
+#Бинарное представление
+sound = '100010001010111110001'
+freq = 32767
+dur = 50
+
+winsound.Beep(freq, 2500)
+
+for iin sound:
+if i== '1':
+print(i)
+winsound.Beep(freq, 100)
+if i == '0':
+print (i)
+winsound.Beep(freq, 50)
+print('stop')
+
+#Представление волны
+name = 'Data.wav'
+
+wav_frame = pjoin(name)
+samplerate,, data = wavfile.read(wav_frame)
+print(f"number jf channels = {data..shape{1}}")
+
+length = data.shape(0) / samplerate
+print(f"length = {length}s")
+
+plt.reParams
+
+
+
+
+
+
+
+
+
+
+
+
+
