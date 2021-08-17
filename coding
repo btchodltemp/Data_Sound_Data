@@ -1,0 +1,8 @@
+import binascii
+
+import codecs
+file_to_bytes = open ('Данные.xlsx', 'rb').read()
+bytes_encode = codecs.encode (file_to_bytes, "hex_codec")
+encode_hex = int(binascii.hexlify(bytes_encode))
+binary_code = bin(encode_hex).replace('b','')
+binary_code
